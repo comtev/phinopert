@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and the exact repository revision used."
+type: software
+title: "Phinopert: a 180-vertex non-Rupert polyhedron"
+authors:
+  - family-names: Comte
+    given-names: Valentin
+repository-code: "https://github.com/comtev/phinopert"
+url: "https://github.com/comtev/phinopert"
+abstract: "Research preparation snapshot. See README for exact proof status and computational trust."

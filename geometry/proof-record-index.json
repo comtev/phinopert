@@ -1,0 +1,14 @@
+{
+  "complete_lean_non_rupert_theorem": false,
+  "fresh_full_replay_performed_for_this_release": false,
+  "full_archive_included": false,
+  "historical_archive_sha256": "b531aefeac102379ed42cc9d200de844ce9dfd4e8e76907421c36627f679c3c2",
+  "historical_verification_sha256": "5cbcda1def26881083da6f6e2e1a78b26faccd1deeab405be58d8105e4e6ee84",
+  "records_replayed_in_entire_audit_corpus": 29673,
+  "root_counts": {
+    "covered": 432,
+    "total": 432
+  },
+  "shape_sha256": "ccc058dd1600ccf1c334f3365ac9eaba204525f4d86c2dc8fda85ead093d56e5",
+  "snapshot_date": "2026-10-18"
+}

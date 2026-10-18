@@ -1,0 +1,64 @@
+{
+  "shape_sha256": "ccc058dd1600ccf1c334f3365ac9eaba204525f4d86c2dc8fda85ead093d56e5",
+  "source_files": {
+    "results/global-cover-v1/inputs.json": "3edba92cc11c8fd6b391f867a19068885222c527fd7e5946de3d7f418a1c2edf",
+    "results/survivor-analysis-v1/exact-geometry.json": "8473255706a7a8112b9808af641e20e0ac88c75431af8ba3ae7ef605d40c4447"
+  },
+  "polygon_faces": 182,
+  "face_sizes": {
+    "3": 60,
+    "4": 90,
+    "5": 12,
+    "6": 20
+  },
+  "source_supports_checked_exactly": true,
+  "mesh_before_export": {
+    "vertices": 180,
+    "triangles": 356,
+    "edges": 534,
+    "closed": true,
+    "connected": true,
+    "outward_winding": true,
+    "vertex_links_are_cycles": true,
+    "euler_characteristic": 2,
+    "volume": 293.80292166515335
+  },
+  "stl_readback_validation": {
+    "vertices": 180,
+    "triangles": 356,
+    "edges": 534,
+    "closed": true,
+    "connected": true,
+    "outward_winding": true,
+    "vertex_links_are_cycles": true,
+    "euler_characteristic": 2,
+    "volume": 551361.7543824908
+  },
+  "stl_units": "interpret as millimetres (STL has no unit metadata)",
+  "bounding_box_mm": {
+    "min": [
+      -50.0,
+      -50.0,
+      0.0
+    ],
+    "max": [
+      50.0,
+      50.0,
+      100.0
+    ]
+  },
+  "uniform_scale_mm_per_mathematical_unit": 12.33465033319523,
+  "translation_mm": [
+    0.0,
+    0.0,
+    50.0
+  ],
+  "stl_note": "Triangulated flat polygon faces; coordinates rounded to floating point. Physical printing adds manufacturing tolerances.",
+  "figure_note": "Orthographic projections from the frozen vertex coordinates; hidden faces culled, polygon faces coloured by number of sides.",
+  "outputs_sha256": {
+    "figure.tikz": "2d804d816448620d80e1676f2eaf98d8ae1acc2415b6dc8d8610ee75552f00ee",
+    "ico_union_0.png": "d9a85a1815668bbb3a7510446c0801d06221e03b9b4114e8513fb2070c45cca0",
+    "ico_union_0.svg": "696021cb5b17c1526566a32e8da75181b9ea4f8241d483d74befd9f34bd660cd",
+    "ico_union_0_100mm.stl": "4b74388337c7ee570d28fa0b9a5c4846369cdda62b53bc9d732b18c1b76ced88"
+  }
+}
