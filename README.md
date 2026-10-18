@@ -26,17 +26,20 @@ and coverage certificates, using established exact-inequality methods.
 
 ## The solid
 
-Let $\varphi=(1+\sqrt5)/2$, and let $I$ be the proper icosahedral rotation group
-preserving the signed cyclic permutations of $(0,\varphi,1)$. Put
+Let `φ = (1 + sqrt(5))/2`, and let `I` be the proper icosahedral rotation group
+preserving the signed cyclic permutations of `(0, φ, 1)`. Here `sqrt(5)` is
+the positive square root of five, and `conv` denotes the convex hull. Define
 
-$$K(a,b)=\operatorname{conv}\{\pm g(2+\varphi+a,b,\varphi^2):g\in I\}.$$
+```text
+K(a,b) = conv{ ±g(2 + φ + a, b, φ²) : g ∈ I }
 
-Then
+H = conv( K(-1/4, 0) ∪ (19/20) K(0, 1/10) )
+```
 
-$$H=\operatorname{conv}\left(K(-1/4,0)\cup(19/20)K(0,1/10)\right).$$
+The factor `19/20` uniformly scales the second body before taking the convex hull.
 
 The generating orbits contain 60 and 120 points. Every one is an exposed vertex,
-with coordinates in $\mathbb Q(\sqrt5)$. The historical identifier is
+with coordinates that are rational combinations of `1` and `sqrt(5)`. The historical identifier is
 `ico_union_0`; **Phinopert** is this project's chosen name.
 
 ## Start here

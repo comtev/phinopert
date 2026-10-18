@@ -44,13 +44,13 @@
       "sha256": "87854037714dec8476a5065def7a02f451d343a0fb81656e52ecb5b6cbd86648"
     },
     "README.md": {
-      "bytes": 4968,
+      "bytes": 5131,
       "origin": {
         "source": "release_prep/templates/phinopert/README.md",
-        "source_sha256": "a68e68032e149a7bea4a70bd40002f886d8aad0ebbba30a1e001de99e7cf410b",
+        "source_sha256": "81d0bd9f0fdc5819af7e95bd9934128da129ae6c6df4566cbfcbcf65eb8e8ddf",
         "transformation": "byte-identical"
       },
-      "sha256": "a68e68032e149a7bea4a70bd40002f886d8aad0ebbba30a1e001de99e7cf410b"
+      "sha256": "81d0bd9f0fdc5819af7e95bd9934128da129ae6c6df4566cbfcbcf65eb8e8ddf"
     },
     "THIRD_PARTY.md": {
       "bytes": 2080,
