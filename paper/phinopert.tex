@@ -7,6 +7,11 @@
 \usepackage{tikz}
 \usepackage{xurl}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\hypersetup{
+  pdftitle={A 180-vertex non-Rupert polyhedron with icosahedral symmetry},
+  pdfauthor={Valentin Comte},
+  pdfsubject={Convex geometry and formal verification},
+  pdfkeywords={Rupert's problem, polyhedra, icosahedral symmetry, Lean}}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
@@ -18,7 +23,7 @@
 \newcommand{\HH}{H}
 \title{A 180-vertex non-Rupert polyhedron\\with icosahedral symmetry}
 \author{Valentin Comte}
-\date{16 October 2026}
+\date{17 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -29,8 +34,12 @@ icosahedral group. Symmetry reduces the passage problem to a compact
 five-dimensional domain. Exact supporting inequalities exclude its regular
 regions; divided finite-rotation inequalities and reflection transport handle
 neighbourhoods where the shadows touch. A complete certificate covers all
-432 initial regions. We describe the geometric argument, its finite checks
-and the assumptions on the implementation.
+432 initial regions. A subsequent Lean 4.19 formalisation establishes the
+global strict-shadow noncontainment theorem; its retained final audit reports
+only propositional extensionality, classical choice and quotient soundness.
+We describe the geometric argument, its finite checks and the assumptions on
+the implementations. Portable distribution and independent reproduction of
+the large generated Lean corpus are distinguished from the completed research run.
 \end{abstract}
 
 \section{Introduction}
@@ -542,13 +551,63 @@ replays share arithmetic and certificate libraries; the separate coverage
 traversal is not an independent implementation of those inequalities.
 Some identities have distinct polynomial and direct-geometric checks, but
 neither regression tests nor repeated execution proves software correctness.
-This result is a computer-assisted proof, not a proof-assistant formalisation.
-The continuous reduction and the correspondence between the stated lemmas
-and the checker require mathematical review.
+These observations describe the historical Python certificate proof. A later
+Lean formalisation, completed on 16 November 2026, also establishes the global
+projection statement. Its precise scope and audit are described below. The
+correspondence between the intended body and statement, the paper's exposition
+and the formal definitions still requires mathematical review.
 
 The full review package retains the certificate lineage and a map from proof
 obligations to checker entry points. Appendix~\ref{app:replay} gives the replay
 procedure. It runs the saved checks, not a new search for a certificate.
+
+\subsection{Completed Lean formalisation}
+The final declaration is
+\begin{quote}\small\ttfamily
+Phinopert.actual\_phinopert\_no\_proper\_shadow\_fit :\par
+\quad Phinopert.NoProperShadowFit
+\end{quote}
+It quantifies over every nonzero viewing direction, both proper linear
+rotations and every translation. The predicate excludes containment of every
+point of the projected plug in the planar interior of the projected hole.
+The body is the real convex hull of the finite exact coordinate table,
+evaluated at the positive real square root of five. The formal target is
+this geometric projection statement, rather than a separate model of
+physical machining or motion.
+
+The final proof applies the established rotation-domain reduction and the
+closed cover by 432 original roots, supplying an actual exclusion proof for
+each root. The conditional coverage lemma therefore leaves no certificate
+hypothesis in the final theorem. The repository's
+\path{docs/THEOREM_MAP.md} maps these steps to their Lean declarations.
+
+The retained final assembly, \texttt{phinopert-global-final-v129}, checked
+$1{,}146/1{,}146$ modules: $1{,}144$ authenticated completed prefix modules
+and two final native compilations. All $432/432$ roots were closed. This is
+a final-stage count, not the size of the entire imported proof corpus.
+Before and after the assembly, audits checked $172{,}548$ original and
+$172{,}546$ packed imported files. The reported final axiom dependencies are
+exactly \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}.
+The final-audit SHA-256 is
+\begin{center}\small
+\nolinkurl{3bded0dcd6bb6eb7099f96aee5b5faf7bd3516be210b1e90337f20bd8166cf20}.
+\end{center}
+
+The research run used authenticated prior objects, compacted import metadata
+and a bounded dependency-traversal cache. Proof/type payloads, source and
+object identities and original axiom certificates were checked; current-stage
+theorems and definitions were excluded from that cache. Negative controls
+tested rejection of false proofs and forbidden axioms. Time, disk and worker
+limits remained enforced. Details and retained evidence are supplied in
+\path{docs/VERIFICATION.md} and \path{verification/v129/}.
+
+Kernel verification depends on Lean's kernel, its foundational axioms and
+the executing toolchain and hardware. The historical import and provenance
+tooling also forms part of the recorded verification procedure. A portable
+source package is prepared separately from the compact repository; a fresh
+end-to-end build of that distribution is a distinct release check and is not
+claimed by the retained completion records. Neither internal audit nor
+formal verification constitutes independent human peer review.
 
 \section{Discussion}
 The construction separates symmetry from the geometry of the obstruction.

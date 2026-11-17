@@ -1,0 +1,17 @@
+{
+  "pid": 93353,
+  "phase": "finished",
+  "checked_modules": 1146,
+  "selected_modules": 1146,
+  "complete": true,
+  "full_non_rupert_theorem_formalised": true,
+  "authenticated_prefix_modules": 1144,
+  "native_kernel_modules": 2,
+  "updated_utc": "2026-11-16T11:30:40.004208+00:00",
+  "elapsed_seconds": 13092.62881337502,
+  "passed": true,
+  "whole_root_proofs_checked": 432,
+  "actual_global_theorem": "Phinopert.actual_phinopert_no_proper_shadow_fit",
+  "final_audit_sha256": "3bded0dcd6bb6eb7099f96aee5b5faf7bd3516be210b1e90337f20bd8166cf20",
+  "run_pins_sha256": "0b0e84e1a845dc60a1038bcd2911fef00b630fd2ea5f3e88792cf1cf434beeb0"
+}

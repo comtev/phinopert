@@ -1,0 +1,26 @@
+{
+  "selection": "Transitive project imports of ActualPhinopertNoProperShadowFit, matched to retained source hashes",
+  "project_modules": 169583,
+  "project_source_bytes": 5869302374,
+  "original_compact_lean_files": 157,
+  "compact_files_in_final_import_closure": 153,
+  "retained_regression_controls": [
+    "FoldNegativeControls",
+    "IcosahedralNegativeControls",
+    "SO3NegativeControls",
+    "SupportNegativeControls"
+  ],
+  "external_imports": [
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+    "Mathlib.Analysis.Convex.Topology",
+    "Mathlib.Data.Fin.VecNotation",
+    "Mathlib.Data.Finset.Max",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.Data.Real.Sqrt",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.Ring"
+  ],
+  "retained_selected_object_bytes": 484592204880,
+  "source_inventory_is_kernel_proof": false
+}

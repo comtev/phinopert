@@ -1,0 +1,19 @@
+name: Repository integrity and geometry
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  small-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Verify inventory
+        run: python3 -B scripts/check_release.py
+      - name: Check exact geometry
+        run: python3 -B scripts/check_geometry.py
+      - name: Check retained audit evidence
+        run: python3 -B scripts/check_evidence.py
+      - name: Exercise release guard negatives
+        run: python3 -B -m unittest discover -s tests -v
+      # This job does not download the generated proof corpus or run Lean.

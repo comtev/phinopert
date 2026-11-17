@@ -1,0 +1,4 @@
+# Manifest hashes identify exact bytes on every platform.
+* -text
+# Retained compiler logs include original trailing blank lines.
+verification/v129/*.log whitespace=-blank-at-eof

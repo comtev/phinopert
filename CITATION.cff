@@ -7,4 +7,10 @@ authors:
     given-names: Valentin
 repository-code: "https://github.com/comtev/phinopert"
 url: "https://github.com/comtev/phinopert"
-abstract: "Research preparation snapshot. See README for exact proof status and computational trust."
+abstract: "An explicit 180-vertex non-Rupert polyhedron with icosahedral symmetry. Includes the mathematical manuscript, exact geometry, core Lean sources and evidence of the completed 16 November 2026 formal verification. See the reproduction guide for the separate generated proof corpus and portable rebuild status."
+keywords:
+  - Rupert's problem
+  - convex geometry
+  - polyhedra
+  - formal verification
+  - Lean

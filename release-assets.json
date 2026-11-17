@@ -1,0 +1,27 @@
+{
+  "format": "phinopert-release-assets-v1",
+  "candidate_date": "2026-11-17",
+  "published": false,
+  "assets": [
+    {
+      "file": "phinopert-proof-sources-v2.tar.gz",
+      "bytes": 456546752,
+      "sha256": "c6e59cb1c1962f3c3cdaf52572ddb8cc3014465020915dec213d684e81e9ccc4",
+      "source_manifest_sha256": "cd62dd7d87861bcc9825b11b817dc147b46522ce91e2ce8cb0c2317b16ecf66d",
+      "modules": 169583,
+      "source_bytes": 5869302374,
+      "fresh_kernel_rebuild_passed": false,
+      "role": "complete-project-lean-source-closure",
+      "download_url": null,
+      "publication_status": "prepared-private",
+      "archive_integrity_verified": true,
+      "compiler_pilot_modules_checked": 3,
+      "distribution": "github-release-asset",
+      "staging_path": "dist/phinopert-proof-sources-v2.tar.gz",
+      "checksum_file": "phinopert-proof-sources-v2.tar.gz.sha256"
+    }
+  ],
+  "portable_full_rebuild_passed": false,
+  "historical_full_proof_passed": true,
+  "full_clean_rebuild_policy": "intentionally-skipped-by-author"
+}

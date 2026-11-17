@@ -6,12 +6,20 @@ An explicit **180-vertex non-Rupert polyhedron** with icosahedral symmetry.
 
 Phinopert is a centrally symmetric convex polyhedron constructed from two
 icosahedral orbits. This project provides its exact coordinates, a printable
-model, the research manuscript, and supporting Lean developments.
+model, the research manuscript, and the core of its Lean formalisation.
 
-**Proof status — 18 October 2026:** the recorded Python exact-arithmetic
-certificate chain covers all 432 original regions. The complete non-Rupertness
-theorem is **not yet proved in Lean**. The full historical certificate archive
-is not included in this repository snapshot; see [reproduction](docs/REPRODUCING.md).
+**Proof status — 16 November 2026:** the complete Lean theorem
+`Phinopert.actual_phinopert_no_proper_shadow_fit` passed the retained final
+verification and axiom audits, with all **432 original regions** covered.
+Its only reported axioms are `propext`, `Classical.choice` and `Quot.sound`.
+The compact repository includes the statement, core sources and audit evidence;
+the large generated proof corpus is a separate release asset. A full clean
+rebuild of that portable distribution is intentionally not performed for this
+candidate. See
+[proof status](docs/PROOF_STATUS.md) and [reproduction](docs/REPRODUCING.md).
+
+[Paper](paper/phinopert.pdf) · [Proof guide](docs/THEOREM_MAP.md) ·
+[Verification report](docs/VERIFICATION.md) · [Release preparation](docs/RELEASE_CHECKLIST.md)
 
 ## What is Rupert’s property?
 
@@ -46,10 +54,12 @@ with coordinates that are rational combinations of `1` and `sqrt(5)`. The histor
 
 | Material | Location |
 | --- | --- |
-| Paper source, including its figure | [paper/phinopert.tex](paper/phinopert.tex) |
+| Paper and editable source | [PDF](paper/phinopert.pdf) · [LaTeX](paper/phinopert.tex) |
 | Exact shape record and geometric witnesses | [geometry/](geometry/) |
 | Printable 100 mm STL | [models/phinopert-100mm.stl](models/phinopert-100mm.stl) |
-| Lean source snapshot and dependency notes | [lean/](lean/) |
+| Core Lean definitions and final theorem | [lean/](lean/) |
+| Paper-to-Lean correspondence | [Theorem map](docs/THEOREM_MAP.md) |
+| Retained final audit evidence | [verification/v129/](verification/v129/) |
 | What has been checked, and what remains | [Proof status](docs/PROOF_STATUS.md) |
 | Reproduction and trust boundaries | [Reproducing the results](docs/REPRODUCING.md) |
 
@@ -60,11 +70,14 @@ From the repository root, using Python 3.10 or later and its standard library:
 ```bash
 python3 scripts/check_release.py
 python3 scripts/check_geometry.py
+python3 scripts/check_evidence.py
 ```
 
 The first checks the release inventory and hashes. The second checks the exact
 180-point record, central symmetry, full dimension, strict vertex exposures
-and every listed supporting facet. **Neither proves non-Rupertness.**
+and every listed supporting facet. The third checks the consistency and hashes
+of the included final audit evidence. **These are small integrity and geometry
+checks, not a fresh Lean verification of non-Rupertness.**
 
 The STL uses rounded coordinates, is triangulated and is intended to be
 interpreted in millimetres. Its bounding box is 100 mm on each axis. A printed
@@ -80,11 +93,18 @@ record count includes controls and other bodies, not 29,673 distinct Phinopert
 regions. The audit shares the underlying geometric checkers; it is not an
 independent arithmetic implementation or external peer review.
 
-The Lean work formalises the exact body, containment geometry, icosahedral
-symmetries, the rotation-domain reduction and parts of the certificate replay.
-The remaining contact and global-coverage arguments are explicit obligations.
-This snapshot contains source, not a claim that `lake build` proves the final
-theorem. No compiled objects or locally installed toolchains are vendored.
+The Lean proof formalises the exact body, containment geometry, icosahedral
+symmetries, the rotation-domain reduction, certificate exclusions and global
+coverage. The final theorem supplies all root exclusions to the geometric
+reduction; it has no remaining certificate hypothesis. The final assembly
+stage checked 1,146 modules, including 1,144 authenticated earlier results and
+two final native compilations. This count excludes the much larger imported
+proof corpus. [The verification report](docs/VERIFICATION.md) explains the
+kernel, axiom, dependency and boundary checks and their trust assumptions.
+
+The generated corpus and build products are kept out of Git. Read the
+[Lean guide](lean/README.md) before attempting a full rebuild; the compact
+checkout alone is not an end-to-end `lake build` target.
 
 ## Attribution and citation
 

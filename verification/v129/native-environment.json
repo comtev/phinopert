@@ -1,0 +1,14 @@
+{
+  "lean": "92c3d35b5bfaa5e0fea413a775d504cf46cd95e1345df61c2274f76779e7e023",
+  "lake_manifest": "0ab49857fad406031c9966779b65e09b7586e43c7a484248c0092258a02808ad",
+  "native_toolchain": "325b10ce75e98efafca33ed7e13cde947d003e6388f1beaf1ae6ad42f952cbc2",
+  "input_transport": "fb2d76a2ac4b30a7270fa11ea86e73a371606d7c378b9e4f221f9073221d3ac6",
+  "io_advice": "7e091d8f4e7e259e5a4136f7ec3bd0873a98cc2bfde03127ab227f2e9218a185",
+  "sparse_frontend": "c9a4981266a9e4b0a2f74dffe7a51ffe4dcb525f6b47f24e1955e1cbc8e787f6",
+  "dependency_traversal_sources": "7667538835b4e104758cd0286e6c0a3a762898fb819fd5bdce4e5c5500c4eb32",
+  "original_cache": "fa08e28293b4cb54665f08173499e733615bf678c905f7b696426cc65eb70295",
+  "original_cache_authentication": "284203eb452601b092ca859760e8f61576edebe57393560079cee2fcc95f753f",
+  "packed_import_manifest": "7b288af6f8b4e028ee37bd70bb435c02db119a944f595ed550e9afc04b78ab50",
+  "packing_equivalence_verifier": "6dcae2081b81e833edfddfb211400f57a4cb2d69865bd25ace834c560230429a",
+  "audit_only_upstream_controls": "6c8444496f6f881c48aa85dde3fc232eaf3db6a1139f513b4989aa48dc29d3ec"
+}

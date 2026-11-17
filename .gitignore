@@ -12,3 +12,7 @@ __pycache__/
 *.synctex.gz
 *.tmp
 local-results/
+dist/
+*.tar.gz
+.replay.lock
+!verification/**/*.log

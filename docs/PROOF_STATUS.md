@@ -1,29 +1,38 @@
-# Phinopert proof status
+# Proof status
 
-Snapshot: 18 October 2026.
+Updated 17 November 2026. The completed research run is `phinopert-global-final-v129`,
+finished **16 November 2026 at 11:30:40 UTC**.
 
 | Layer | Status |
 | --- | --- |
-| Exact body and 180 exposed vertices | Recorded exact checks; small geometric replay included |
-| Python non-Rupert certificate chain | Recorded completed audit, 432/432 original roots |
-| Full historical replay in this Git tree | Not included; distribution and archive preparation remain |
-| Lean body, geometry, group and rotation-domain work | Source snapshot included; inherited developments checked locally |
-| Lean certificate replay | Partial; the next support batch is prepared, not completed |
-| Full non-Rupertness in Lean | **Not proved** |
-| External human peer review | Not claimed |
+| Exact body and 180 exposed vertices | Exact small checks included and runnable |
+| Historical Python certificate chain | Recorded completed audit, 432/432 original roots |
+| Full Lean non-Rupertness theorem | **Completed and audited in the research environment** |
+| Final Lean assembly | 1,146/1,146 modules; 432/432 root exclusions |
+| Final axiom audit | `propext`, `Classical.choice`, `Quot.sound` only |
+| Core sources and final evidence | Included in this repository |
+| Portable source distribution | See [release assets](RELEASE_ASSETS.md); packaging and successful rebuilding are different checks |
+| Fresh end-to-end build of the portable distribution | Intentionally not performed for this candidate |
+| Independent human review | Not claimed |
 
-The next local support batch targets 3,827 geometric exclusions, 2,082 support
-normals and 193 empty-view exclusions, with 949 partial task assemblies.
-Those task assemblies can close at most 52 of the 432 original roots. Neither
-the task count nor overlapping intermediate-stage counts measure the fraction
-of the mathematical proof completed.
+The exact final declaration is
+[`Phinopert.actual_phinopert_no_proper_shadow_fit`](../lean/ActualPhinopertNoProperShadowFit.lean),
+of type `NoProperShadowFit`. It rules out strict orthogonal-shadow containment
+for every nonzero viewing direction, both proper rotations and every translation.
+The [theorem map](THEOREM_MAP.md) expands the definitions and explains the relation
+to the paper's straight-passage formulation.
 
-Remaining formalisation includes changing-contact supports, stronger quadratic
-certificates, contact strata and divisions, radial/transfer charts and final
-domain assembly. The completed Python chain and the unfinished Lean theorem
-are different verification layers; neither status should be silently used
-as evidence for the other.
+The 1,146 count describes the **final assembly stage**, not the entire Lean
+dependency closure. Of these, 1,144 were authenticated from completed earlier
+compilations and two were compiled in the final native run. The dependency
+audits examined 172,548 original and 172,546 packed imported files. Those are
+file counts, not additional original roots or independent proofs.
 
-The recorded 29,673 checks span the complete audit corpus, including controls
-and other candidates. Unresolved regions for another body, such as the separate
-RID exploratory run, are not premises of the completed Phinopert result.
+The October snapshot's unfinished Lean status is superseded by this result.
+The historical Python total of 29,673 geometric records includes controls,
+other bodies and alternative branches. It is not the number of Phinopert roots.
+Incomplete experiments for other bodies are not premises of this theorem.
+
+Completion records establish what the retained run checked. They do not make
+the small checkout a standalone proof package or replace a fresh verifier run.
+See [verification and trust](VERIFICATION.md) and [reproduction](REPRODUCING.md).

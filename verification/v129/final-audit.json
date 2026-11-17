@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checked_modules": 1146,
+  "whole_root_proofs_checked": 432,
+  "authenticated_prefix_modules": 1144,
+  "native_kernel_modules": 2,
+  "actual_global_theorem": "Phinopert.actual_phinopert_no_proper_shadow_fit",
+  "upstream_audit_sha256": "4f726809653a944ffe75704d19948b8df02626b3d68ef59e4175130f517fd09b",
+  "prefix_audit_sha256": "3d2b8ca6b33c24f0f4af045fba922c057b4c7a5dfa37fe891502088b03fabcc2",
+  "server_before_sha256": "3a986eac4e087ebe19a0a451f742e741c1a22668a60aa446013aa495bafceb97",
+  "server_after_sha256": "3a986eac4e087ebe19a0a451f742e741c1a22668a60aa446013aa495bafceb97",
+  "native_compiler_pins_sha256": "8e2df5c05352f2bd37133bcf235a60a005fb7a067c583b196461458d24202926",
+  "packed_import_manifest_sha256": "7b288af6f8b4e028ee37bd70bb435c02db119a944f595ed550e9afc04b78ab50",
+  "packed_equivalence_source_sha256": "6dcae2081b81e833edfddfb211400f57a4cb2d69865bd25ace834c560230429a",
+  "original_import_files_audited": 172548,
+  "packed_import_files_audited": 172546,
+  "object_inventory_sha256": "36004c46633c845c0f5382adb6e4515389d34066c05706da848849adf185a5f0"
+}

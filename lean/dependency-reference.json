@@ -2,5 +2,9 @@
   "full_build_pack_included": false,
   "lean": "leanprover/lean4:v4.19.0",
   "mathlib_archive_sha256": "fd6bd32a498dcf50a28df78270838ae7b995f25cbd03beec4b3b79f31c3df550",
-  "mathlib_tag": "v4.19.0"
+  "mathlib_tag": "v4.19.0",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "project_source_archive": "../release-assets.json",
+  "complete_project_source_asset_prepared": true,
+  "portable_full_rebuild_passed": false
 }

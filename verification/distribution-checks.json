@@ -1,0 +1,253 @@
+{
+  "format": "phinopert-distribution-checks-v1",
+  "date": "2026-11-17",
+  "source_asset": "phinopert-proof-sources-v2.tar.gz",
+  "source_asset_sha256": "c6e59cb1c1962f3c3cdaf52572ddb8cc3014465020915dec213d684e81e9ccc4",
+  "source_manifest_sha256": "cd62dd7d87861bcc9825b11b817dc147b46522ce91e2ce8cb0c2317b16ecf66d",
+  "archive_members_checked": 169593,
+  "all_archive_member_hashes_passed": true,
+  "source_inventory_modules_checked": 169583,
+  "portable_stock_lean_pilot": {
+    "compiler_version": "4.19.0",
+    "exit_code": 0,
+    "checkpoint": {
+      "complete": false,
+      "passed": false,
+      "checked_modules": 3,
+      "selected_modules": 169583,
+      "target": "Phinopert.actual_phinopert_no_proper_shadow_fit",
+      "phase": "checkpoint",
+      "termination_class": "requested_checkpoint"
+    },
+    "receipts": [
+      {
+        "module": "PhinopertData",
+        "source_sha256": "e5ef9dbf11c224fb8668b3cf8933c5d921b4884e5cda83dbc447234ea6c3a100",
+        "object_sha256": "2ed1e62fc5d6fd3e001c379db65eefd07d51d9282aa3910441646ea32d8e5130",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "seconds": 3.0013158209621906,
+        "axioms": {},
+        "environment_record_sha256": "a6972c50953a5f136308e7bd44ba904c82a3fccbdd064b6ec7cdf20bb17ba1cc"
+      },
+      {
+        "module": "Foundations",
+        "source_sha256": "203b5f21de8b90e60fdb374729918526963abaabdf9b522f575dc2dba4bd1f5b",
+        "object_sha256": "649fbc868b0fb361b31866015c248f43ca41048a91f5859f053cabb11542a453",
+        "log_sha256": "df85da2a7b0f6dcf5410d33605509f66444e2568fc4a353f6e7f1098225cfcea",
+        "seconds": 7.5023801093921065,
+        "axioms": {
+          "Phinopert.vertex_list_length": [
+            "propext"
+          ],
+          "Phinopert.raw_neg_involution": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.raw_neg_closed": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.eval_neg": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.eval_add": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.eval_mul": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.vertex_set_centrally_symmetric": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.rawSeed0_mem": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.rawSeed1_mem": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.rawSeed2_mem": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.seed_determinant_positive": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.root5_bounds": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.opposite_sign_positive": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.denom_positive": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.numerator_dot": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.cayley_dot": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.numerator_orientation": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.cayley_orientation": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.cleared_support_gap": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.nonnegative_gap_excludes_strict_support": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "environment_record_sha256": "a6972c50953a5f136308e7bd44ba904c82a3fccbdd064b6ec7cdf20bb17ba1cc"
+      },
+      {
+        "module": "Geometry",
+        "source_sha256": "e6474e697c2271b4674bf92b0c010c6f6fae896d1a910b49ff6d37e08c7d88ec",
+        "object_sha256": "6a625cddb83b18a4c7f44fbd792e6db739ad467bdc5687340b2abe9df8d5228f",
+        "log_sha256": "031c2b83044e4ce8614786f34c23b14dee3520f17ac581293b596f3e9700986a",
+        "seconds": 7.502384550869465,
+        "axioms": {
+          "Phinopert.sqrt5_spec": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.solid_centrally_symmetric": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.screen_dot": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.screen_kernel": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.shadow_convex": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.shadow_centrally_symmetric": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.centre_strict_containment": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.strict_fit_centred": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.planar_functional_open": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.interior_support_strict": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.screen_normal_section": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.hull_support": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.gap_excludes_shadow_interior": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.strict_fit_gap_negative": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.gap_excludes_translated_fit": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "Phinopert.weighted_gaps_exclude_translated_fit": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "environment_record_sha256": "a6972c50953a5f136308e7bd44ba904c82a3fccbdd064b6ec7cdf20bb17ba1cc"
+      }
+    ],
+    "resume_receipt_validation_passed": true,
+    "historical_project_objects_used": false
+  },
+  "full_clean_rebuild": {
+    "performed": false,
+    "reason": "Intentionally skipped at the author's request; no independent full portable replay claimed"
+  },
+  "existing_research_outputs_targeted_for_cleanup": false,
+  "dependency_setup_note": "Standard mathlib cache setup removed temporary download-control files. No cleanup of existing research outputs or archives was requested. Subsequent pilot used copied prepared dependencies without rerunning that downloader.",
+  "release_tool_tests": 10,
+  "release_tool_tests_passed": true,
+  "negative_cases_tested": [
+    "duplicate JSON key",
+    "forbidden axiom",
+    "missing axiom report",
+    "duplicate axiom report",
+    "source path escape",
+    "missing or unsorted import",
+    "changed source",
+    "changed release asset",
+    "existing different staged asset"
+  ]
+}

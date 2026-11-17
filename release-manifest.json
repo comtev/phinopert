@@ -1,20 +1,50 @@
 {
   "files": {
-    ".gitignore": {
-      "bytes": 125,
+    ".gitattributes": {
+      "bytes": 179,
       "origin": {
-        "source": "release_prep/templates/common/.gitignore",
-        "source_sha256": "67b3c40bd48c9d9063b5767996c73969679aaf213256a3326b3eb339643fbcf6",
-        "transformation": "byte-identical"
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
       },
-      "sha256": "67b3c40bd48c9d9063b5767996c73969679aaf213256a3326b3eb339643fbcf6"
+      "sha256": "820e03bc77c41b248709b79630e7068cb169804ff6a764aafb6c95a32fd4fc3d"
+    },
+    ".github/workflows/checks.yml": {
+      "bytes": 708,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "877d5712496bf9a8239d975df081484f0a2aaff332d1c70540565cfc7f2baaf1"
+    },
+    ".gitignore": {
+      "bytes": 176,
+      "origin": {
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "67b3c40bd48c9d9063b5767996c73969679aaf213256a3326b3eb339643fbcf6",
+        "transformation": "Release revision, 17 November 2026"
+      },
+      "sha256": "716e5f908a64d071eb4a0fb96c2c200bcf3fc3494fce7f67fb25f4da58ee978f"
+    },
+    "CHANGELOG.md": {
+      "bytes": 1073,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "3e02493de9973120d4dcf94bc99708ea7184fcea3ffc4b610cc44b5b714b0255"
     },
     "CITATION.cff": {
-      "bytes": 426,
+      "bytes": 742,
       "origin": {
-        "generated": "Author-approved identity; no DOI, arXiv ID or publication date invented"
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "496a2bd8b86a6288aa96ed8cb5512c99f7882bce1f65196c92256feaefb78072",
+        "transformation": "Release revision, 17 November 2026"
       },
-      "sha256": "496a2bd8b86a6288aa96ed8cb5512c99f7882bce1f65196c92256feaefb78072"
+      "sha256": "0d12ef82d50c1016763d2798ad304d25f5808f9f5abf2f93b601d713428f7ea3"
+    },
+    "CONTRIBUTING.md": {
+      "bytes": 949,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "87196a2a6776edda798fe312af738efd9958641fbc28c5b7dfae67612afedd12"
     },
     "LICENSE": {
       "bytes": 1071,
@@ -44,13 +74,13 @@
       "sha256": "87854037714dec8476a5065def7a02f451d343a0fb81656e52ecb5b6cbd86648"
     },
     "README.md": {
-      "bytes": 5131,
+      "bytes": 6360,
       "origin": {
-        "source": "release_prep/templates/phinopert/README.md",
-        "source_sha256": "81d0bd9f0fdc5819af7e95bd9934128da129ae6c6df4566cbfcbcf65eb8e8ddf",
-        "transformation": "byte-identical"
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "81d0bd9f0fdc5819af7e95bd9934128da129ae6c6df4566cbfcbcf65eb8e8ddf",
+        "transformation": "Release revision, 17 November 2026"
       },
-      "sha256": "81d0bd9f0fdc5819af7e95bd9934128da129ae6c6df4566cbfcbcf65eb8e8ddf"
+      "sha256": "ca603dec71781d5f498a7b2418669b80d90ed56dc417a80630a41fcd3a28542b"
     },
     "THIRD_PARTY.md": {
       "bytes": 2080,
@@ -80,31 +110,52 @@
       "sha256": "696021cb5b17c1526566a32e8da75181b9ea4f8241d483d74befd9f34bd660cd"
     },
     "docs/PROOF_STATUS.md": {
-      "bytes": 1597,
+      "bytes": 2283,
       "origin": {
-        "source": "release_prep/templates/phinopert/docs/PROOF_STATUS.md",
-        "source_sha256": "ca145c4daefcea3e108c60de848f47a307efdca4d05cb70dfd26b4b48b93a2e4",
-        "transformation": "byte-identical"
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "ca145c4daefcea3e108c60de848f47a307efdca4d05cb70dfd26b4b48b93a2e4",
+        "transformation": "Release revision, 17 November 2026"
       },
-      "sha256": "ca145c4daefcea3e108c60de848f47a307efdca4d05cb70dfd26b4b48b93a2e4"
+      "sha256": "cde3a7e90c0bf19fcda7ad47aa7c9e1fece237184f3197aa2ca712adc1d71a5b"
+    },
+    "docs/RELEASE_ASSETS.md": {
+      "bytes": 4589,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "c5dcc3f868c7c1dd1963f2fd0bff92386273c507f61b88aedfabdd7f82502764"
     },
     "docs/RELEASE_CHECKLIST.md": {
-      "bytes": 1386,
+      "bytes": 3177,
       "origin": {
-        "source": "release_prep/templates/common/docs/RELEASE_CHECKLIST.md",
-        "source_sha256": "182a74f55b3c80345fc3a9a187918218910f19ab3282f8d6a9f1d9aae255122d",
-        "transformation": "byte-identical"
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "182a74f55b3c80345fc3a9a187918218910f19ab3282f8d6a9f1d9aae255122d",
+        "transformation": "Release revision, 17 November 2026"
       },
-      "sha256": "182a74f55b3c80345fc3a9a187918218910f19ab3282f8d6a9f1d9aae255122d"
+      "sha256": "2eee3a5f23a3c20ce9fcb018c36ac771eca3e975e91ec319aaf895f6c33528ba"
     },
     "docs/REPRODUCING.md": {
-      "bytes": 2576,
+      "bytes": 5093,
       "origin": {
-        "source": "release_prep/templates/phinopert/docs/REPRODUCING.md",
-        "source_sha256": "9101bf78540e34188f77bf7b0d349f2765b2577fde7ef0f1cff3f2812ff02fd6",
-        "transformation": "byte-identical"
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "9101bf78540e34188f77bf7b0d349f2765b2577fde7ef0f1cff3f2812ff02fd6",
+        "transformation": "Release revision, 17 November 2026"
       },
-      "sha256": "9101bf78540e34188f77bf7b0d349f2765b2577fde7ef0f1cff3f2812ff02fd6"
+      "sha256": "e8829224d6a0bac0f60629ca38e36b2994cd4626ebb1ac836136e94164ed3284"
+    },
+    "docs/THEOREM_MAP.md": {
+      "bytes": 4481,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "ce72b7a45ceccf2716acb2d674ff9622360bc12dfb0c926afeecb516ed036f78"
+    },
+    "docs/VERIFICATION.md": {
+      "bytes": 4398,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "4588e79799c157849c40f57ca7bb2cca2fee031d90570c17cdfe2653404242d6"
     },
     "geometry/exact-geometry.json": {
       "bytes": 96721,
@@ -139,6 +190,15 @@
         "transformation": "byte-identical"
       },
       "sha256": "b7de241713a3feddc7812ec01f215dfa2f069605e5361648acaf827f1164d5f4"
+    },
+    "lean/ActualPhinopertNoProperShadowFit.lean": {
+      "bytes": 529,
+      "origin": {
+        "source": "results/phinopert-global-final-v129/generated/ActualPhinopertNoProperShadowFit.lean",
+        "source_sha256": "3da3c240db80121eb3dcb0921848515d9dfb92536f9c808cbcadf5f60994a2a3",
+        "transformation": "byte-identical"
+      },
+      "sha256": "3da3c240db80121eb3dcb0921848515d9dfb92536f9c808cbcadf5f60994a2a3"
     },
     "lean/CayleyCompatibility.lean": {
       "bytes": 1607,
@@ -1418,6 +1478,24 @@
       },
       "sha256": "68e8add147ddfebfb9b4e804f666f0c9b83f05d70aa0c9de97cfce260533171a"
     },
+    "lean/OriginalRootCoverage.lean": {
+      "bytes": 520317,
+      "origin": {
+        "source": "results/phinopert-original-root-cover-preflight-v2/OriginalRootCoverage.lean",
+        "source_sha256": "61f8367dcaf43c4966e41cc3107929af9ba60f49e047489eeebd6c8704c610c6",
+        "transformation": "byte-identical"
+      },
+      "sha256": "61f8367dcaf43c4966e41cc3107929af9ba60f49e047489eeebd6c8704c610c6"
+    },
+    "lean/OriginalRootRange000To432.lean": {
+      "bytes": 751,
+      "origin": {
+        "source": "results/phinopert-global-final-v129/generated/OriginalRootRange000To432.lean",
+        "source_sha256": "86a18128e99ca638e0a08ec269646cb546bdab6efe69f9ecbc20f71b51f6e3df",
+        "transformation": "byte-identical"
+      },
+      "sha256": "86a18128e99ca638e0a08ec269646cb546bdab6efe69f9ecbc20f71b51f6e3df"
+    },
     "lean/OrthogonalShadow.lean": {
       "bytes": 6972,
       "origin": {
@@ -1446,11 +1524,13 @@
       "sha256": "5a0ab052c95e530264f32301a917bb1cddaa9869c53d5c8a69b7d2af8028a22c"
     },
     "lean/README.md": {
-      "bytes": 986,
+      "bytes": 1892,
       "origin": {
-        "generated": "Release scope note"
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "6d2533997d6a9483332358c17af80d6d3cb671a5887df710f9b73dc0e85b4fb6",
+        "transformation": "Release revision, 17 November 2026"
       },
-      "sha256": "6d2533997d6a9483332358c17af80d6d3cb671a5887df710f9b73dc0e85b4fb6"
+      "sha256": "a2370dfb76959d7bf0d22636ffb089fafea7174f24651445c0fcd1995881938d"
     },
     "lean/RepresentativeSelection.lean": {
       "bytes": 11628,
@@ -1552,11 +1632,20 @@
       "sha256": "f4f5ee90b38a414fc136e313880eae79f3c1f271d570cd58ac5e92ec4c851ce9"
     },
     "lean/dependency-reference.json": {
-      "bytes": 202,
+      "bytes": 411,
       "origin": {
-        "generated": "Pinned historical setup reference"
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "919fd999e63343f86a3456026c6df168398c01ef9bcdb6c1826cab711bea6242",
+        "transformation": "Release revision, 17 November 2026"
       },
-      "sha256": "919fd999e63343f86a3456026c6df168398c01ef9bcdb6c1826cab711bea6242"
+      "sha256": "6ef46fc9c65350d9dd2290e2fb6cae35ecc3b58b3f8d0eb4ec58102a96d5d098"
+    },
+    "lean/source-selection.json": {
+      "bytes": 868,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "71477beecce81d11d419ea3f86a0539f9551ab6a97e48b3ea2ac0dfbdc442375"
     },
     "models/original-validation.json": {
       "bytes": 2024,
@@ -1576,14 +1665,35 @@
       },
       "sha256": "4b74388337c7ee570d28fa0b9a5c4846369cdda62b53bc9d732b18c1b76ced88"
     },
-    "paper/phinopert.tex": {
-      "bytes": 51065,
+    "paper/phinopert.pdf": {
+      "bytes": 95470,
       "origin": {
-        "source": "results/ico-union-proof-note-v1/non_rupert_ico_union.tex",
-        "source_sha256": "f9fc120a520f96720f86cd6b5fd4552b6699743918a2d049ca24e5ebb3f26fec",
-        "transformation": "byte-identical"
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
       },
-      "sha256": "f9fc120a520f96720f86cd6b5fd4552b6699743918a2d049ca24e5ebb3f26fec"
+      "sha256": "4d1007cb5b7dcf888d2ab99ecd18de62d3744aa6ac7d4ce593b34172c9bc813b"
+    },
+    "paper/phinopert.tex": {
+      "bytes": 54533,
+      "origin": {
+        "previous_commit": "52f8aad33c7816bbcb72a5be07b89b23c899aa1f",
+        "previous_sha256": "f9fc120a520f96720f86cd6b5fd4552b6699743918a2d049ca24e5ebb3f26fec",
+        "transformation": "Release revision, 17 November 2026"
+      },
+      "sha256": "c99a4b8c8ce85c1f1c63a85e2d2b0839e6276ade83e9d3a80fe01a0aadae181a"
+    },
+    "release-assets.json": {
+      "bytes": 1035,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "ec0fb7c3fbb93b0526e341abcb9a0950339f7c3eac54aeb84a64a0ec65df66e8"
+    },
+    "scripts/check_evidence.py": {
+      "bytes": 2923,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "ec54198a76cb124b55001fbe3dfcbed407bd0916d1ab41b8b30544b0d6deef66"
     },
     "scripts/check_geometry.py": {
       "bytes": 2708,
@@ -1611,10 +1721,107 @@
         "transformation": "byte-identical"
       },
       "sha256": "fbd6c25df466953e7eb50ac1c6c19978886c2f4dc912584880a9402db29d53e0"
+    },
+    "scripts/package_release.py": {
+      "bytes": 3953,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "755565e23862f9732160b9dd6e145d5e1f93e4b7805d704ced2923a825544021"
+    },
+    "scripts/replay_lean.py": {
+      "bytes": 11433,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "d7f2980e8710f5335811d308a1e4245ef28ef75ca2442731a76cadfef6fb676e"
+    },
+    "tests/test_release_guards.py": {
+      "bytes": 4078,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "82674b12e5323f656788ddd5db0eb65cc300816ac861b4c48b4b236a604a610e"
+    },
+    "verification/distribution-checks.json": {
+      "bytes": 8144,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "39dd6a4a7fb4bd758cee7ead04d39f861eabce657b256962a1ef84f3cefe4e27"
+    },
+    "verification/paper-build.json": {
+      "bytes": 479,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "101b54d8d48d2e935a5aa67ac47e5dbe65d194f82c4fc3d0789db98be356c678"
+    },
+    "verification/v129/ActualPhinopertNoProperShadowFit.log": {
+      "bytes": 110,
+      "origin": {
+        "source": "results/phinopert-global-final-v129/logs/ActualPhinopertNoProperShadowFit.log",
+        "source_sha256": "fc7d62e97bee8c23cc7a02829270fd1e7e348e5765eda47ffd60baddefbd6cae",
+        "transformation": "byte-identical"
+      },
+      "sha256": "fc7d62e97bee8c23cc7a02829270fd1e7e348e5765eda47ffd60baddefbd6cae"
+    },
+    "verification/v129/ActualPhinopertNoProperShadowFit.receipt.json": {
+      "bytes": 396,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "2d7d3afdad5f57cdf4639c93f75d0a972130fa6627f4a22891dbec89fff38e73"
+    },
+    "verification/v129/OriginalRootRange000To432.log": {
+      "bytes": 107,
+      "origin": {
+        "source": "results/phinopert-global-final-v129/logs/OriginalRootRange000To432.log",
+        "source_sha256": "b9a8c5441fb2063dd66e96eb3b86b3c0605f390acb4dafd85e7252ca7c1e8126",
+        "transformation": "byte-identical"
+      },
+      "sha256": "b9a8c5441fb2063dd66e96eb3b86b3c0605f390acb4dafd85e7252ca7c1e8126"
+    },
+    "verification/v129/OriginalRootRange000To432.receipt.json": {
+      "bytes": 395,
+      "origin": {
+        "generated": "Release documentation, tooling or explicitly labelled evidence extract, 17 November 2026"
+      },
+      "sha256": "d6f2a86a121ead9b6aa9344860e2d9d49fab5c4cff0c6ddf2aca82fc3d8c0ebc"
+    },
+    "verification/v129/final-audit.json": {
+      "bytes": 1098,
+      "origin": {
+        "source": "results/phinopert-global-final-v129/final-audit.json",
+        "source_sha256": "3bded0dcd6bb6eb7099f96aee5b5faf7bd3516be210b1e90337f20bd8166cf20",
+        "transformation": "byte-identical"
+      },
+      "sha256": "3bded0dcd6bb6eb7099f96aee5b5faf7bd3516be210b1e90337f20bd8166cf20"
+    },
+    "verification/v129/native-environment.json": {
+      "bytes": 1112,
+      "origin": {
+        "source": "results/phinopert-global-final-v129/native-environment.json",
+        "source_sha256": "62124d3c33f764bbf409d093f1373f2279e1f22e438de7f07ab3ab5d1a6176a1",
+        "transformation": "byte-identical"
+      },
+      "sha256": "62124d3c33f764bbf409d093f1373f2279e1f22e438de7f07ab3ab5d1a6176a1"
+    },
+    "verification/v129/summary.json": {
+      "bytes": 639,
+      "origin": {
+        "source": "results/phinopert-global-final-v129/summary.json",
+        "source_sha256": "3e45d65297c8b87345c936d72a91a52788db70da95ae491231a4042a6c394438",
+        "transformation": "byte-identical"
+      },
+      "sha256": "3e45d65297c8b87345c936d72a91a52788db70da95ae491231a4042a6c394438"
     }
   },
   "format": "curated-research-release-v1",
-  "full_kernel_proof_claimed": false,
+  "full_kernel_proof_claimed": true,
+  "portable_full_rebuild_passed": false,
+  "proof_claim_scope": "Completed retained research run v129; not a fresh portable rebuild",
+  "published": false,
   "repository": "phinopert",
-  "snapshot_date": "2026-10-18"
+  "snapshot_date": "2026-11-17"
 }
